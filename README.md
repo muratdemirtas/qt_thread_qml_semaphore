@@ -1,16 +1,14 @@
-Connect Qt QML and C++
+Using Semaphore On Qt Using QThreads,WorkerTasks,Signal-Slots and QML
 ======================
 
 Overview
 --------
 
-This program demonstrates how QML and C++ can be connected through Qt signals
-and slots. It does this through embedding C++ code as a context property in QML
-rather than explicitly connecting signals and slots.
+A semaphore is a synchronization object that controls access by multiple processes to a common resource in a parallel programming environment. Semaphores are widely used to control access to files and shared memory. The three basic functionalities associated with semaphores are set, check and wait until it clears to set it again. |
 
-When the program is started, the C++ part send a signal to QML, including a
-parameter. This signal is only sent once. When the user clicks on the window
-area, a signal is sent from QML to a C++ slot.
+Semaphores are used to address benchmark synchronization problems.
+
+The concept of semaphore was put forth by the Dutch computer scientist Edsger Dijkstra.
 
 Watch the console output to see if it works.
 
@@ -22,9 +20,9 @@ This program requires a working Qt5 installation. It was tested with version 5.3
 In order to compile and run the program, execute the following commands.
 
 ~~~
-qmake untitled2.pro
+qmake qt_threads_semaphores_qml.pro
 make
-./untitled2
+./qt_threads_semaphores_qml
 ~~~
 
 Alternatively, the project can be loaded into Qt Creator and started from there.
