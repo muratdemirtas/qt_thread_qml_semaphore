@@ -3,6 +3,7 @@ Using Semaphore On Qt Using QThreads,WorkerTasks,Signal-Slots and QML
 
 Overview
 --------
+This program runs two threads. These threads are doing their jobs after waiting a certain amount of time. After waiting, these threads updating gauge value on a qml object. We prevent data loss by putting together a semaphore to prevent both of them from accessing this object at the same time.
 
 A semaphore is a synchronization object that controls access by multiple processes to a common resource in a parallel programming environment. Semaphores are widely used to control access to files and shared memory. The three basic functionalities associated with semaphores are set, check and wait until it clears to set it again. |
 
